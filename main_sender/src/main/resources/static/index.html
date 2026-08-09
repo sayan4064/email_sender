@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Send Email</h2>
+        
+        <!-- Status Message Container -->
+        <div id="responseMessage" class="message hidden"></div>
+
+        <form id="emailForm">
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="email" id="to" placeholder="recipient@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="Meeting / Hello / Welcome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="body">Message Body:</label>
+                <textarea id="body" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" id="sendBtn">Send Email</button>
+        </form>
+    </div>
+</body>
+</html>
